@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class ParkingLot {
@@ -21,6 +22,7 @@ public class ParkingLot {
 
     public ParkingLot(int capacity) {
         this.capacity = capacity;
+        this.cars = new ArrayList<>();
     }
 
 
@@ -35,5 +37,11 @@ public class ParkingLot {
 
     public int getAvailableParkingPosition() {
         return count - capacity;
+    }
+
+    public Car fetch(Car car) {
+        int index = this.cars.indexOf(car);
+        Car carFetch = this.cars.remove(index);
+        return carFetch;
     }
 }

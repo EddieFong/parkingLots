@@ -1,15 +1,18 @@
 public class ParkingTicket {
-    private final String carId;
+    private final ParkingLot parkingLot;
 
-    public ParkingTicket(String carId) {
-        this.carId = carId;
+    public Car getCar() {
+        return car;
     }
 
-    public ParkingTicket() {
-        this.carId = null;
+    private final Car car;
+
+    public ParkingTicket(Car car, ParkingLot parkingLot) {
+        this.car = car;
+        this.parkingLot = parkingLot;
     }
 
-    public String getCarId() {
-        return carId;
+    public ParkingLot getParkingLot() {
+        return parkingLot;
     }
 }

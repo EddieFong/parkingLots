@@ -4,6 +4,7 @@ public class ParkingBoy {
     private ArrayList<ParkingLot> parkingLots;
 
     public ParkingBoy(ParkingLot parkingLot) {
+        this.parkingLots = new ArrayList<>();
         this.parkingLots.add(parkingLot);
     }
 
@@ -23,14 +24,20 @@ public class ParkingBoy {
     }
 
     public Car fetch(ParkingTicket ticket) {
-        return null;
+        ParkingLot parkingLot = ticket.getParkingLot();
+        return parkingLot.fetch(ticket.getCar());
     }
 
     public ParkingTicket park(Car car) {
         ParkingLot parkingLot = findTargetParkingLot();
-        parkingLot.park(car);
-        ParkingTicket parkingTicket = new ParkingTicket(car.getId());
-        return parkingTicket;
+        if (parkingLot != null) {
+            parkingLot.park(car);
+            ParkingTicket parkingTicket = new ParkingTicket(car, parkingLot);
+            return parkingTicket;
+        } else {
+            System.out.println("Error");
+            return null;
+        }
     }
 
     private ParkingLot findTargetParkingLot() {
