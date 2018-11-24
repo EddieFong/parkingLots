@@ -64,8 +64,8 @@
       <file leaf-file-name="ParkingBoyFacts.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ParkingBoyFacts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="60" column="65" lean-forward="false" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="65" />
+            <state relative-caret-position="462">
+              <caret line="74" column="61" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,8 +113,8 @@
       <file leaf-file-name="ParkingBoy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ParkingBoy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="40" column="41" lean-forward="false" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+            <state relative-caret-position="351">
+              <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
               <folding>
                 <element signature="e#311#312#0" expanded="true" />
                 <element signature="e#357#358#0" expanded="true" />
@@ -565,7 +565,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParkingBoyFacts.should_clear_the_message_once_the_operation_is_succeeded">
+  <component name="RunManager" selected="JUnit.ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_not_provided">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -627,14 +627,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_wrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_not_provided" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="parkingLots_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ParkingBoyFacts" />
-      <option name="METHOD_NAME" value="should_not_fetch_any_car_once_ticket_is_wrong" />
+      <option name="METHOD_NAME" value="should_not_fetch_any_car_once_ticket_is_not_provided" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -647,14 +647,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ParkingBoyFacts.should_park_a_car_to_a_parking_lot_and_get_it_back" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_wrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="parkingLots_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ParkingBoyFacts" />
-      <option name="METHOD_NAME" value="should_park_a_car_to_a_parking_lot_and_get_it_back" />
+      <option name="METHOD_NAME" value="should_not_fetch_any_car_once_ticket_is_wrong" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -748,19 +748,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_park_a_car_to_a_parking_lot_and_get_it_back" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_park_multiple_cars_to_a_parking_lot_and_get_them_back" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_wrong" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_clear_the_message_once_the_operation_is_succeeded" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_park_multiple_cars_to_a_parking_lot_and_get_them_back" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_wrong" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_clear_the_message_once_the_operation_is_succeeded" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_not_provided" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_clear_the_message_once_the_operation_is_succeeded" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_wrong" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_park_multiple_cars_to_a_parking_lot_and_get_them_back" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_park_a_car_to_a_parking_lot_and_get_it_back" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_not_provided" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_clear_the_message_once_the_operation_is_succeeded" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_wrong" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ParkingBoyFacts.should_park_multiple_cars_to_a_parking_lot_and_get_them_back" />
       </list>
     </recent_temporary>
   </component>
@@ -787,8 +787,8 @@
     <history-entry file="ParkingBoyFacts_should_clear_the_message_once_the_operation_is_succeeded - 2018.11.24 at 21h 22m 23s.xml">
       <configuration name="ParkingBoyFacts.should_clear_the_message_once_the_operation_is_succeeded" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingBoyFacts_should_not_fetch_any_car_once_ticket_is_wrong - 2018.11.24 at 21h 15m 09s.xml">
-      <configuration name="ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_wrong" configurationId="JUnit" />
+    <history-entry file="ParkingBoyFacts_should_not_fetch_any_car_once_ticket_is_not_provided - 2018.11.24 at 21h 23m 24s.xml">
+      <configuration name="ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_not_provided" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ParkingBoyFacts_should_not_fetch_any_car_once_ticket_is_wrong - 2018.11.24 at 21h 17m 06s.xml">
       <configuration name="ParkingBoyFacts.should_not_fetch_any_car_once_ticket_is_wrong" configurationId="JUnit" />
@@ -813,7 +813,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
+    <frame x="-13" y="-13" width="2762" height="1770" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1005,8 +1005,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ParkingBoy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="40" column="41" lean-forward="false" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+        <state relative-caret-position="351">
+          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding>
             <element signature="e#311#312#0" expanded="true" />
             <element signature="e#357#358#0" expanded="true" />
@@ -1016,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ParkingBoyFacts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="60" column="65" lean-forward="false" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="65" />
+        <state relative-caret-position="462">
+          <caret line="74" column="61" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
