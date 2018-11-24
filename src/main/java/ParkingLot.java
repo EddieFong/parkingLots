@@ -26,9 +26,13 @@ public class ParkingLot {
     }
 
 
-    public void park(Car car) {
+    public boolean park(Car car) {
+        if (this.count == this.capacity){
+            return false;
+        }
         this.cars.add(car);
         this.count++;
+        return true;
     }
 
     public int getCapacity() {
@@ -43,6 +47,7 @@ public class ParkingLot {
         int index = this.cars.indexOf(car);
         if (index >= 0 ){
             Car carFetch = this.cars.remove(index);
+            this.count--;
             return carFetch;
         }else{
             return null;

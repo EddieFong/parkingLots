@@ -48,12 +48,15 @@ public class ParkingBoy {
     public ParkingTicket park(Car car) {
         ParkingLot parkingLot = findTargetParkingLot();
         if (parkingLot != null) {
-            parkingLot.park(car);
-            ParkingTicket parkingTicket = new ParkingTicket(car, parkingLot);
-            this.lastErrorMessage = null;
-            return parkingTicket;
+            boolean parked = parkingLot.park(car);
+            if (parked){
+                ParkingTicket parkingTicket = new ParkingTicket(car, parkingLot);
+                this.lastErrorMessage = null;
+                return parkingTicket;
+            }
+            return null;
         } else {
-            System.out.println("Error");
+            this.lastErrorMessage = "The parking lot is full.";
             return null;
         }
     }
