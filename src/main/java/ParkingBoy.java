@@ -8,7 +8,7 @@ public class ParkingBoy {
     }
 
     public Car fetch(ParkingTicket ticket) {
-
+        return null;
     }
 
     public ParkingTicket park(Car car) {
