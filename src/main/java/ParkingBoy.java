@@ -38,6 +38,7 @@ public class ParkingBoy {
         if (parkingLot != null) {
             parkingLot.park(car);
             ParkingTicket parkingTicket = new ParkingTicket(car, parkingLot);
+            this.lastErrorMessage = null;
             return parkingTicket;
         } else {
             System.out.println("Error");
