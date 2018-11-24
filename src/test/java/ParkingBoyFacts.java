@@ -37,7 +37,7 @@ class ParkingBoyFacts {
         ParkingLot parkingLot = new ParkingLot();
         ParkingBoy parkingBoy = new ParkingBoy(parkingLot);
         Car car = new Car("001");
-        ParkingTicket wrongTicket = new ParkingTicket(car, parkingLot);
+        ParkingTicket wrongTicket = new ParkingTicket(null, null);
 
         ParkingTicket ticket = parkingBoy.park(car);
 
@@ -49,7 +49,7 @@ class ParkingBoyFacts {
     void should_query_message_once_the_ticket_is_wrong() {
         ParkingLot parkingLot = new ParkingLot();
         ParkingBoy parkingBoy = new ParkingBoy(parkingLot);
-        ParkingTicket wrongTicket = new ParkingTicket(null, parkingLot);
+        ParkingTicket wrongTicket = new ParkingTicket(null, null);
 
         parkingBoy.fetch(wrongTicket);
         String message = parkingBoy.getLastErrorMessage();

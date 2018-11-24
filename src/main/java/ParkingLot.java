@@ -41,7 +41,12 @@ public class ParkingLot {
 
     public Car fetch(Car car) {
         int index = this.cars.indexOf(car);
-        Car carFetch = this.cars.remove(index);
-        return carFetch;
+        if (index >= 0 ){
+            Car carFetch = this.cars.remove(index);
+            return carFetch;
+        }else{
+            return null;
+        }
+
     }
 }

@@ -24,6 +24,11 @@ public class ParkingBoy {
     }
 
     public Car fetch(ParkingTicket ticket) {
+        if ( (ticket.getCar() == null) || (ticket.getParkingLot() == null) ){
+            this.lastErrorMessage = "Unrecognized parking ticket.";
+            return null;
+        }
+
         ParkingLot parkingLot = ticket.getParkingLot();
         return parkingLot.fetch(ticket.getCar());
     }
