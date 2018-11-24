@@ -5,6 +5,10 @@ public class ParkingLot {
     private final int capacity;
     private List<Car> cars;
 
+    public ParkingLot() {
+        this(10);
+    }
+
     public int getCount() {
         return count;
     }
@@ -27,5 +31,9 @@ public class ParkingLot {
 
     public int getCapacity() {
         return capacity;
+    }
+
+    public int getAvailableParkingPosition() {
+        return count - capacity;
     }
 }
