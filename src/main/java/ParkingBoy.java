@@ -24,12 +24,24 @@ public class ParkingBoy {
     }
 
     public Car fetch(ParkingTicket ticket) {
-        if ( (ticket == null) ||(ticket.getCar() == null) || (ticket.getParkingLot() == null) ){
+        if (ticket == null){
+            this.lastErrorMessage = "Please provide your parking ticket.";
+            return null;
+        }
+
+        if ( (ticket.getCar() == null) || (ticket.getParkingLot() == null) ){
             this.lastErrorMessage = "Unrecognized parking ticket.";
             return null;
         }
 
+        if ( ticket.isUsed()){
+            this.lastErrorMessage = "Unrecognized parking ticket.";
+            return null;
+        }
+
+
         ParkingLot parkingLot = ticket.getParkingLot();
+        ticket.setUsed(true);
         return parkingLot.fetch(ticket.getCar());
     }
 
