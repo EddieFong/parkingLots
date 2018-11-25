@@ -77,6 +77,7 @@ public class ParkingBoy {
     }
 
 
-
-
+    public ArrayList<ParkingLot> getParkingLots() {
+        return parkingLots;
+    }
 }
