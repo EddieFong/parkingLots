@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ParkingBoyFacts {
@@ -144,5 +146,29 @@ class ParkingBoyFacts {
         parkingBoy.park(new Car("002"));
 
         assertEquals("The parking lot is full.", parkingBoy.getLastErrorMessage());
+    }
+
+    @Test
+    void mult_parking_lot() {
+        final int capacity = 1;
+        ParkingLot parkingLot1 = new ParkingLot(capacity);
+        ParkingLot parkingLot2 = new ParkingLot(capacity);
+        ArrayList<ParkingLot> parkingLots = new ArrayList<>();
+        parkingLots.add(parkingLot1);
+        parkingLots.add(parkingLot2);
+
+        ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
+
+        Car firstCar = new Car("001");
+        Car secondCar = new Car("002");
+
+        ParkingTicket firstTicket = parkingBoy.park(firstCar);
+        ParkingTicket secondTicket = parkingBoy.park(secondCar);
+
+        Car fetchedByFirstTicket = parkingBoy.fetch(firstTicket);
+        Car fetchedBySecondTicket = parkingBoy.fetch(secondTicket);
+
+        assertSame(firstCar, fetchedByFirstTicket);
+        assertSame(secondCar, fetchedBySecondTicket);
     }
 }

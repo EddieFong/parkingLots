@@ -8,6 +8,10 @@ public class ParkingBoy {
         this.parkingLots.add(parkingLot);
     }
 
+    public ParkingBoy(ArrayList<ParkingLot> parkingLots) {
+        this.parkingLots = parkingLots;
+    }
+
     public void setParkingLots(ArrayList<ParkingLot> parkingLots) {
         this.parkingLots = parkingLots;
     }
