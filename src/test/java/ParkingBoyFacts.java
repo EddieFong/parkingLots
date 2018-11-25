@@ -190,4 +190,26 @@ class ParkingBoyFacts {
         assertSame(parkingLot2, firstTicket.getParkingLot());
 
     }
+
+    @Test
+    void super_smart_parking_boy() {
+        ParkingLot parkingLot1 = new ParkingLot(3);
+        ParkingLot parkingLot2 = new ParkingLot(10);
+        ArrayList<ParkingLot> parkingLots = new ArrayList<>();
+        parkingLots.add(parkingLot1);
+        parkingLots.add(parkingLot2);
+
+        ParkingBoy parkingBoy = new SmartParkingBoy(parkingLots);
+
+        Car firstCar = new Car("001");
+        Car secondCar = new Car("002");
+        Car thirdCar = new Car("003");
+
+        ParkingTicket firstTicket = parkingBoy.park(firstCar);
+        ParkingTicket secondTicket = parkingBoy.park(secondCar);
+        ParkingTicket thirdTicket = parkingBoy.park(thirdCar);
+        
+        assertSame(parkingLot2, thirdTicket.getParkingLot());
+
+    }
 }
