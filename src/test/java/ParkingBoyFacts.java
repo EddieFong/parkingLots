@@ -241,4 +241,23 @@ class ParkingBoyFacts {
 
     }
 
+
+    @Test
+    void Parking_Lot_Service_Manager_use_parking_boy_park() {
+
+        ParkingLot parkingLot = new ParkingLot();
+        ParkingLotServiceManager parkingLotServiceManager = new ParkingLotServiceManager();
+        ParkingBoy parkingBoy = new ParkingBoy(parkingLot);
+        Car car1 = new Car("001");
+        parkingLotServiceManager.addParkingBoy(parkingBoy);
+
+        ParkingTicket ticket = parkingLotServiceManager.useParkingBoyToPark(parkingBoy, car1);
+        Car actualNullCar = parkingLotServiceManager.useParkingBoyToFetch(parkingBoy, null);
+        Car actualFetchCar = parkingLotServiceManager.useParkingBoyToFetch(parkingBoy, ticket);
+
+        assertEquals("Please provide your parking ticket.",parkingBoy.getLastErrorMessage());
+        assertNull(actualNullCar);
+        assertSame(car1, actualFetchCar);
+
+    }
 }

@@ -1,14 +1,12 @@
 import java.util.ArrayList;
 
-public class ParkingLotServiceManager extends ParkingBoy{
+public class ParkingLotServiceManager{
     private ArrayList<ParkingBoy> managementList;
     public ParkingLotServiceManager(ArrayList<ParkingBoy> managementList) {
-        super((ParkingLot) null);
         this.managementList = managementList;
     }
 
     public ParkingLotServiceManager() {
-        super((ParkingLot) null);
         this.managementList = new ArrayList<>();
 
     }
@@ -17,4 +15,15 @@ public class ParkingLotServiceManager extends ParkingBoy{
     public void addParkingBoy(ParkingBoy parkingBoy) {
         this.managementList.add(parkingBoy);
     }
+
+    public ParkingTicket useParkingBoyToPark (ParkingBoy parkingBoy, Car car){
+        ParkingTicket ticket =  parkingBoy.park(car);
+        return ticket;
+    }
+
+    public Car useParkingBoyToFetch (ParkingBoy parkingBoy, ParkingTicket ticket){
+        Car car =  parkingBoy.fetch(ticket);
+        return car;
+    }
+
 }
